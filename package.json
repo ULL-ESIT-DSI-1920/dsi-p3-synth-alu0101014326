@@ -1,0 +1,30 @@
+{
+  "name": "p6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist package-lock.json node_modules",
+    "start": "npx parcel ./src/index.html -d .dist --port 8080",
+    "build": "parcel build ./src/index.html --public-url /dsi-p3-synth-alu0101014326/ -d build",
+    "deploy": "npx gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-DSI-1920/dsi-p3-synth-alu0101014326.git"
+  },
+  "author": "Diego Vázquez Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DSI-1920/dsi-p3-synth-alu0101014326/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-DSI-1920/dsi-p3-synth-alu0101014326#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0"
+  },
+  "dependencies": {}
+}
