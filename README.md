@@ -137,4 +137,10 @@ letterToLetter(dialog, text, i) {
 
 ## 4. Sound effect
 
+No fue posible la implementación de los efectos sonidos por escritura de texto debido a problemas con la comprensión para exportación/importación de los indicados en la web de la guía de la práctica. Considerando usar ajax, pero no se estaba seguro de si esa era la metodología que había que usar.
+
+## 5. Otros problemas encontrados
+
+En algunos bancos de voz como el usado para el miembro del diálogo de color turquesa no era posible aplicar el onboundary porque el texto nunca aparecía en consecuencia. Del mismo modo, se complicaba si se trataba mapear el texto y hacer un speak letra a letra por la complicación que presenta javascript con la asincronicidad, y quedaba muy engorroso el usar promesas. Por ese motivo sólo aparece desarrollado el metodo de poner la frase de golpe o palabra por palabra. 
+
 *dsi-p3-synth-dkuroi created by GitHub Classroom*
